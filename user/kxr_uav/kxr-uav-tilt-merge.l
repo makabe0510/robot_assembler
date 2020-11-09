@@ -8,13 +8,25 @@
 ;;
 ;; sample for merging some roboasm.l files
 ;;
-(setq ht-torso (parse-roboasm (with-open-file (f "torso_notilt.roboasm.l") (read f))))
+(setq ht-torso (parse-roboasm (with-open-file (f "torso.roboasm.l") (read f))))
+(setq ht-rtilt  (parse-roboasm (with-open-file (f "rtilt.roboasm.l") (read f))))
+(setq ht-ltilt  (parse-roboasm (with-open-file (f "ltilt.roboasm.l") (read f))))
 (setq ht-rleg  (parse-roboasm (with-open-file (f "rleg.roboasm.l") (read f))))
 (setq ht-lleg  (parse-roboasm (with-open-file (f "lleg.roboasm.l") (read f))))
 (setq ht-rarm  (parse-roboasm (with-open-file (f "rarm.roboasm.l") (read f))))
 (setq ht-larm  (parse-roboasm (with-open-file (f "larm.roboasm.l") (read f))))
 
 (setq ht-merged ht-torso)
+(setq ht-merged
+      (merge-parsed-table ht-merged ht-rtilt
+                          :s3301_18721_10/horn
+                          :joint-base_19059_0/horn-hole
+			  :configuration :rotate-90))
+(setq ht-merged
+      (merge-parsed-table ht-merged ht-ltilt
+                          :s3301_18721_18/horn
+                          :joint-base_19060_0/horn-hole
+			  :configuration :rotate90))
 (setq ht-merged
       (merge-parsed-table ht-merged ht-lleg
                           :s3301_27908_1/horn
@@ -38,7 +50,7 @@
 
 (setq asm (create-roboasm-from-parsed-table ht-merged))
 
-(with-open-file (f "kxr_uav_fullbody.roboasm.l" :direction :io) (pprint asm f))
+(with-open-file (f "kxr_uav_fullbody_tilt.roboasm.l" :direction :io) (pprint asm f))
 
 #|
 <body>
