@@ -890,6 +890,22 @@ parts:
         translation: [5.0, 31.0, 31.0]
         rotation: [0, 1.0, 0, 90.0]	
   -
+    type: fin_foot
+    geometry:
+      -
+        type: mesh
+        url: "meshes/kxr_uav/fin_foot.STL"
+    mass-param:
+      mass: 0.0210
+      center-of-mass: [0.030, 0.0065, 0.0600]
+      inertia-tensor: [1.292452e-05, 0.0, 0.0,  0.0, 1.292452e-05, 0.0,  0.0, 0.0, 2.472604e-05]
+    fixed-points:
+      -
+        name: horn-hole
+        types: [horn-hole]
+        translation: [30.0, 6.5, 60.0]
+        rotation: [1, 0, 0, 90.0]	
+  -
     type: finger
     geometry:
       -

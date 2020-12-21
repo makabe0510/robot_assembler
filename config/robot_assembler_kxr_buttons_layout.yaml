@@ -97,6 +97,9 @@
 - name: 'Add: wheel-foot'
   service: 'robot_assembler/use_wheel_foot'
   column: 2
+- name: 'Add: fin-foot'
+  service: 'robot_assembler/use_fin_foot'
+  column: 2
 - name: 'Add: uav-backpack'
   service: 'robot_assembler/use_uav_backpack'
   column: 2
