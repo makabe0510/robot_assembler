@@ -5,7 +5,7 @@ larm:
   - JOINT1 : larm-shoulder-y
   - JOINT2 : larm-shoulder-r
   - JOINT3 : larm-elbow-p
-  #- JOINT4 : larm-elbow-y
+  - JOINT4 : larm-elbow-y
   - JOINT5 : larm-wrist-p
   - JOINT6 : larm-wrist-r
   - JOINT7 : larm-gripper-r
@@ -15,7 +15,7 @@ rarm:
   - JOINT10 : rarm-shoulder-y
   - JOINT11 : rarm-shoulder-r
   - JOINT12 : rarm-elbow-p
-  #- JOINT13 : rarm-elbow-y
+  - JOINT13 : rarm-elbow-y
   - JOINT14 : rarm-wrist-p
   - JOINT15 : rarm-wrist-r
   - JOINT16 : rarm-gripper-r
