@@ -2322,128 +2322,128 @@
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT18" />
-  <joint name="JOINT18" type="revolute">
+  <xacro:gazebo_transmission joint_name="HEAD-NECK-Y" />
+  <joint name="HEAD-NECK-Y" type="revolute">
      <parent link="BASE"/>
      <child link="LINK18"/>
      <origin xyz="0.000000 -0.007250 0.077500" rpy="-0.00000000 0.00000000 -1.57079633"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT19" />
-  <joint name="JOINT19" type="revolute">
+  <xacro:gazebo_transmission joint_name="HEAD-NECK-P" />
+  <joint name="HEAD-NECK-P" type="revolute">
      <parent link="LINK18"/>
      <child link="LINK19"/>
      <origin xyz="-0.000000 -0.018000 0.032500" rpy="1.78188966 -1.57079633 -0.21109333"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT20" />
-  <joint name="JOINT20" type="revolute">
+  <xacro:gazebo_transmission joint_name="RLEG-CROTCH-Y" />
+  <joint name="RLEG-CROTCH-Y" type="revolute">
      <parent link="BASE"/>
      <child link="LINK20"/>
      <origin xyz="0.044500 -0.010500 -0.051000" rpy="3.14159265 0.00000000 0.00000000"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT21" />
-  <joint name="JOINT21" type="revolute">
+  <xacro:gazebo_transmission joint_name="RLEG-CROTCH-R" />
+  <joint name="RLEG-CROTCH-R" type="revolute">
      <parent link="LINK20"/>
      <child link="LINK21"/>
      <origin xyz="0.000000 0.017000 0.027500" rpy="2.48054948 1.57079633 0.90975316"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT22" />
-  <joint name="JOINT22" type="revolute">
+  <xacro:gazebo_transmission joint_name="RLEG-CROTCH-P" />
+  <joint name="RLEG-CROTCH-P" type="revolute">
      <parent link="LINK21"/>
      <child link="LINK22"/>
      <origin xyz="0.000000 -0.018000 0.017000" rpy="1.57079633 0.00000000 0.00000000"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT23" />
-  <joint name="JOINT23" type="revolute">
+  <xacro:gazebo_transmission joint_name="RLEG-KNEE-P" />
+  <joint name="RLEG-KNEE-P" type="revolute">
      <parent link="LINK22"/>
      <child link="LINK23"/>
      <origin xyz="-0.057460 -0.007898 -0.000000" rpy="-0.00000000 -0.00000000 0.13659098"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT24" />
-  <joint name="JOINT24" type="revolute">
+  <xacro:gazebo_transmission joint_name="RLEG-ANKLE-P" />
+  <joint name="RLEG-ANKLE-P" type="revolute">
      <parent link="LINK23"/>
      <child link="LINK24"/>
      <origin xyz="-0.023500 -0.053000 -0.000500" rpy="-0.00000000 -0.00000000 1.57079633"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT25" />
-  <joint name="JOINT25" type="revolute">
+  <xacro:gazebo_transmission joint_name="RLEG-ANKLE-R" />
+  <joint name="RLEG-ANKLE-R" type="revolute">
      <parent link="LINK24"/>
      <child link="LINK25"/>
      <origin xyz="-0.021000 -0.017000 -0.018000" rpy="1.57079633 0.00000000 -3.14159265"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT26" />
-  <joint name="JOINT26" type="revolute">
+  <xacro:gazebo_transmission joint_name="RLEG-ANKLE-W" />
+  <joint name="RLEG-ANKLE-W" type="revolute">
      <parent link="LINK25"/>
      <child link="LINK26"/>
      <origin xyz="0.065000 -0.000000 0.017000" rpy="1.14099359 -1.57079633 2.00059907"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT27" />
-  <joint name="JOINT27" type="revolute">
+  <xacro:gazebo_transmission joint_name="LLEG-CROTCH-Y" />
+  <joint name="LLEG-CROTCH-Y" type="revolute">
      <parent link="BASE"/>
      <child link="LINK27"/>
      <origin xyz="-0.044500 -0.010500 -0.051000" rpy="3.14159265 0.00000000 -3.14159265"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT28" />
-  <joint name="JOINT28" type="revolute">
+  <xacro:gazebo_transmission joint_name="LLEG-CROTCH-R" />
+  <joint name="LLEG-CROTCH-R" type="revolute">
      <parent link="LINK27"/>
      <child link="LINK28"/>
      <origin xyz="-0.000000 -0.017000 0.027500" rpy="-1.57079633 1.57079633 0.00000000"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT29" />
-  <joint name="JOINT29" type="revolute">
+  <xacro:gazebo_transmission joint_name="LLEG-CROTCH-P" />
+  <joint name="LLEG-CROTCH-P" type="revolute">
      <parent link="LINK28"/>
      <child link="LINK29"/>
      <origin xyz="0.000000 -0.018000 0.017000" rpy="1.57079633 0.00000000 0.00000000"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT30" />
-  <joint name="JOINT30" type="revolute">
+  <xacro:gazebo_transmission joint_name="LLEG-KNEE-P" />
+  <joint name="LLEG-KNEE-P" type="revolute">
      <parent link="LINK29"/>
      <child link="LINK30"/>
      <origin xyz="-0.057460 -0.007898 -0.000000" rpy="-0.00000000 -0.00000000 0.13659098"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT31" />
-  <joint name="JOINT31" type="revolute">
+  <xacro:gazebo_transmission joint_name="LLEG-ANKLE-P" />
+  <joint name="LLEG-ANKLE-P" type="revolute">
      <parent link="LINK30"/>
      <child link="LINK31"/>
      <origin xyz="-0.023500 -0.053000 -0.000500" rpy="-0.00000000 -0.00000000 1.57079633"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT32" />
-  <joint name="JOINT32" type="revolute">
+  <xacro:gazebo_transmission joint_name="LLEG-ANKLE-R" />
+  <joint name="LLEG-ANKLE-R" type="revolute">
      <parent link="LINK31"/>
      <child link="LINK32"/>
      <origin xyz="-0.021000 -0.017000 -0.018000" rpy="1.57079633 0.00000000 -3.14159265"/>
      <axis xyz="0 0 1"/>
      <limit effort="200" lower="-3.14159" upper="3.14159" velocity="40"/>
   </joint>
-  <xacro:gazebo_transmission joint_name="JOINT33" />
-  <joint name="JOINT33" type="revolute">
+  <xacro:gazebo_transmission joint_name="LLEG-ANKLE-W" />
+  <joint name="LLEG-ANKLE-W" type="revolute">
      <parent link="LINK32"/>
      <child link="LINK33"/>
      <origin xyz="0.065000 -0.000000 0.017000" rpy="0.71573506 -1.57079633 2.42585760"/>
