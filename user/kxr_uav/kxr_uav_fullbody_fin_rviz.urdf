@@ -38,8 +38,8 @@
   <xacro:macro name="no_gazebo_transmission" params="joint_name" >
     <!-- dummy for fixed joint -->
   </xacro:macro>
-  <xacro:gazebo_link_reference link_name="BASE" />
-  <link name="BASE">
+  <xacro:gazebo_link_reference link_name="BODY" />
+  <link name="BODY">
   <inertial>
      <mass value="0.731166"/>
      <origin rpy="0 0 0" xyz="6.965819e-17 -0.02477 0.023854"/>
@@ -2178,9 +2178,15 @@
      </geometry>
   </collision>
   </link>
+  <link name="BASE"/>
+  <xacro:gazebo_transmission joint_name="BASE_JOINT" />
+  <joint name="BASE_JOINT" type="floating">
+     <parent link="BASE"/>
+     <child link="BODY"/>
+  </joint>  
   <xacro:gazebo_transmission joint_name="LARM-SHOULDER-P" />
   <joint name="LARM-SHOULDER-P" type="revolute">
-     <parent link="BASE"/>
+     <parent link="BODY"/>
      <child link="LINK0"/>
      <origin xyz="-0.051000 -0.007250 0.059500" rpy="1.57079633 -0.00000000 -1.57079633"/>
      <axis xyz="0 0 1"/>
@@ -2252,7 +2258,7 @@
   </joint>
   <xacro:gazebo_transmission joint_name="RARM-SHOULDER-P" />
   <joint name="RARM-SHOULDER-P" type="revolute">
-     <parent link="BASE"/>
+     <parent link="BODY"/>
      <child link="LINK9"/>
      <origin xyz="0.051000 -0.007250 0.059500" rpy="-1.57079633 0.00000000 -1.57079633"/>
      <axis xyz="0 0 1"/>
@@ -2324,7 +2330,7 @@
   </joint>
   <xacro:gazebo_transmission joint_name="HEAD-NECK-Y" />
   <joint name="HEAD-NECK-Y" type="revolute">
-     <parent link="BASE"/>
+     <parent link="BODY"/>
      <child link="LINK18"/>
      <origin xyz="0.000000 -0.007250 0.077500" rpy="-0.00000000 0.00000000 -1.57079633"/>
      <axis xyz="0 0 1"/>
@@ -2340,7 +2346,7 @@
   </joint>
   <xacro:gazebo_transmission joint_name="RLEG-CROTCH-Y" />
   <joint name="RLEG-CROTCH-Y" type="revolute">
-     <parent link="BASE"/>
+     <parent link="BODY"/>
      <child link="LINK20"/>
      <origin xyz="0.044500 -0.010500 -0.051000" rpy="3.14159265 0.00000000 0.00000000"/>
      <axis xyz="0 0 1"/>
@@ -2396,7 +2402,7 @@
   </joint>
   <xacro:gazebo_transmission joint_name="LLEG-CROTCH-Y" />
   <joint name="LLEG-CROTCH-Y" type="revolute">
-     <parent link="BASE"/>
+     <parent link="BODY"/>
      <child link="LINK27"/>
      <origin xyz="-0.044500 -0.010500 -0.051000" rpy="3.14159265 0.00000000 -3.14159265"/>
      <axis xyz="0 0 1"/>
