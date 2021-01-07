@@ -64,7 +64,7 @@ larm-end-coords:
   #translate : [0, 0.0105, -0.0185]
   rotate : [0.0, 0.0, 1.0, 63.435]
 
-torso-end-coords:
+head-end-coords:
   parent : BASE
   translate : [0, 0, 0]
   rotate : [0.0, 0.0, 1.0, 90]
