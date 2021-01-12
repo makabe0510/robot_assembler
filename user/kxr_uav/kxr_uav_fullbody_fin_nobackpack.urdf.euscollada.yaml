@@ -30,7 +30,7 @@ rleg:
   - JOINT23 : rleg-knee-p
   - JOINT24 : rleg-ankle-p
   - JOINT25 : rleg-ankle-r
-  - JOINT26 : rleg-ankle-w
+#  - joint26 : rleg-ankle-w
 lleg:
   - JOINT27 : lleg-crotch-y
   - JOINT28 : lleg-crotch-r
@@ -38,7 +38,7 @@ lleg:
   - JOINT30 : lleg-knee-p
   - JOINT31 : lleg-ankle-p
   - JOINT32 : lleg-ankle-r
-  - JOINT33 : lleg-ankle-w
+#  - JOINT33 : lleg-ankle-w
 
 rleg-end-coords:
   parent : LINK26
