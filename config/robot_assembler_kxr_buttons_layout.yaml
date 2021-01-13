@@ -106,3 +106,6 @@
 - name: 'Add: uav-backpack-mount'
   service: 'robot_assembler/use_uav_backpack_mount'
   column: 2
+- name: 'Add: marker-head'
+  service: 'robot_assembler/use_marker_head'
+  column: 2

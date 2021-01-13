@@ -906,6 +906,22 @@ parts:
         translation: [30.0, 6.5, 60.0]
         rotation: [1, 0, 0, 90.0]	
   -
+    type: marker_head
+    geometry:
+      -
+        type: mesh
+        url: "meshes/kxr_uav/marker_head.STL"
+    mass-param:
+      mass: 0.0467
+      center-of-mass: [25, 43.42, 25]
+      inertia-tensor: [3.309262e-07, 0.0, 0.0,  0.0, 3.309262e-07, 0.0,  0.0, 0.0, 6.307065e-07]
+    fixed-points:
+      -
+        name: bottom-4holes
+        types: [joint-base-4holes]
+        translation: [25, 0, 25]
+        rotation: [1.0, 0.0, 0.0, 90.0]
+  -
     type: finger
     geometry:
       -
