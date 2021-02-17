@@ -23,8 +23,8 @@ fixed-point-type-match-list:
   -
     pair: [horn, horn-hole]
     allowed-configuration: [fixed,
-                            rotate-30, rotate30, rotate-60, rotate60,
-                            rotate-90, rotate90, rotate-120, rotate120,
+                            rotate-30, rotate30, rotate-45, rotate45, rotate-60, rotate60,
+                            rotate-90, rotate90, rotate-120, rotate120, rotate-135, rotate135,
                             rotate-150, rotate150,  invert]
   -
     pair: [horn, arm-horn-hole]
@@ -108,9 +108,17 @@ pre-defined-configuration-list:
     description: 'rotate -30[deg] around z-axis'
     rotation: [0, 0, 1, -30]
   -
+    type: rotate-45
+    description: 'rotate -45[deg] around z-axis'
+    rotation: [0, 0, 1, -45]
+  -
     type: rotate-120
     description: 'rotate -120[deg] around z-axis'
     rotation: [0, 0, 1, -120]
+  -
+    type: rotate-135
+    description: 'rotate -135[deg] around z-axis'
+    rotation: [0, 0, 1, -135]
   -
     type: rotate-150
     description: 'rotate -150[deg] around z-axis'
@@ -136,9 +144,17 @@ pre-defined-configuration-list:
     description: 'rotate 30[deg] around z-axis'
     rotation: [0, 0, 1, 30]
   -
+    type: rotate45
+    description: 'rotate 45[deg] around z-axis'
+    rotation: [0, 0, 1, 45]
+  -
     type: rotate120
     description: 'rotate 120[deg] around z-axis'
     rotation: [0, 0, 1, 120]
+  -
+    type: rotate135
+    description: 'rotate 135[deg] around z-axis'
+    rotation: [0, 0, 1, 135]
   -
     type: rotate150
     description: 'rotate 150[deg] around z-axis'
