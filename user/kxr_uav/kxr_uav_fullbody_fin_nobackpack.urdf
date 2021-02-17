@@ -1329,9 +1329,9 @@
   <xacro:gazebo_link_reference link_name="LINK19" />
   <link name="LINK19">
   <inertial>
-     <mass value="0.01216"/>
-     <origin rpy="0 0 0" xyz="0.014681 3.641517e-17 -0.017773"/>
-     <inertia ixx="2.524786e-06" ixy="1.315184e-21" ixz="-7.542271e-08" iyy="3.418106e-06" iyz="4.602190e-21" izz="1.821371e-06"/>
+     <mass value="0.05886"/>
+     <origin rpy="0 0 0" xyz="34.4734 -19.8154 19.7978"/>
+     <inertia ixx="12.0358" ixy="10.465" ixz="-10.4651" iyy="24.2165" iyz="6.01791" izz="24.2164"/>
   </inertial>
   <visual>
      <origin xyz="0.023000 0.000000 -0.004500" rpy="0.00000000 -1.57079633 -0.00000000"/>
@@ -1355,6 +1355,18 @@
      <origin xyz="0.023000 0.000000 -0.017500" rpy="1.57079633 0.00000000 -1.57079633"/>
      <geometry>
      <mesh filename="package://robot_assembler/meshes/mesh_JOINT-BASE.dae" scale="1.000000 1.000000 1.000000"/>
+     </geometry>
+  </collision>
+  <visual>
+     <origin xyz="0.026000 0.025000 -0.042500" rpy="-0.00000000 0.00000000 -1.57079633"/>
+     <geometry>
+     <mesh filename="package://robot_assembler/meshes/kxr_uav/marker_head.STL" scale="0.001000 0.001000 0.001000"/>
+     </geometry>
+  </visual>
+  <collision>
+     <origin xyz="0.026000 0.025000 -0.042500" rpy="-0.00000000 0.00000000 -1.57079633"/>
+     <geometry>
+     <mesh filename="package://robot_assembler/meshes/kxr_uav/marker_head.STL" scale="0.001000 0.001000 0.001000"/>
      </geometry>
   </collision>
   <visual>
