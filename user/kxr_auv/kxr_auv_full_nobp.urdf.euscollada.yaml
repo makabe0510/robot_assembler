@@ -31,16 +31,14 @@ lleg:
   - JOINT23 : lleg-ankle-r
 
 rleg-end-coords:
-#todo fix root lonk and coords
   parent : LINK18
-  translate : [0, 0, 0.0065]
-  rotate : [1.0, 0.0, 0.0, 180]
+  translate : [0.031, 0, 0.017]
+  rotate : [0.0, 1.0, 0.0, -90]
 
 lleg-end-coords:
-#todo fix root lonk and coords
   parent : LINK23
-  translate : [0, 0, 0.0065]
-  rotate : [1.0, 0.0, 0.0, 180]
+  translate : [0.031, 0, 0.017]
+  rotate : [0.0, 1.0, 0.0, -90]
 
 rarm-end-coords:
 #todo fix root link and coords
