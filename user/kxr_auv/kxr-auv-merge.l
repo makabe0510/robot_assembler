@@ -10,26 +10,26 @@
 ;;
 (setq ht-torso (parse-roboasm (with-open-file (f "torso_nobackpack.roboasm.l") (read f))))
 (setq ht-rleg  (parse-roboasm (with-open-file (f "rleg.roboasm.l") (read f))))
-;; (setq ht-lleg  (parse-roboasm (with-open-file (f "lleg_fin.roboasm.l") (read f))))
+(setq ht-lleg  (parse-roboasm (with-open-file (f "lleg.roboasm.l") (read f))))
 (setq ht-rarm  (parse-roboasm (with-open-file (f "rarm.roboasm.l") (read f))))
-;; (setq ht-larm  (parse-roboasm (with-open-file (f "larm.roboasm.l") (read f))))
+(setq ht-larm  (parse-roboasm (with-open-file (f "larm.roboasm.l") (read f))))
 
 (setq ht-merged ht-torso)
-;; (setq ht-merged
-;;       (merge-parsed-table ht-merged ht-lleg
-;;                           :s3301_27908_1/horn
-;; 			  :joint-base_5143_0/horn-hole
-;; 			  :configuration :rotate-90))
+(setq ht-merged
+      (merge-parsed-table ht-merged ht-lleg
+			  :battery-leg-plate_18619_0/4holes0
+			  :joint-base_5143_0/bottom-4holes
+			  :configuration :invert))
 (setq ht-merged
       (merge-parsed-table ht-merged ht-rleg
                           :battery-leg-plate_18619_0/4holes1
 			  :joint-base_5142_0/bottom-4holes
 			  :configuration :invert))
-;; (setq ht-merged
-;;       (merge-parsed-table ht-merged ht-larm
-;;                           :s3301_18721_28/horn
-;;                           :joint-base_7080_0/horn-hole
-;; 			  :configuration :rotate-90))
+(setq ht-merged
+      (merge-parsed-table ht-merged ht-larm
+                          :s3301_18721_28/horn
+                          :joint-base_3561_0/horn-hole
+			  :configuration :rotate-135))
 (setq ht-merged
       (merge-parsed-table ht-merged ht-rarm
                           :s3301_18721_24/horn
